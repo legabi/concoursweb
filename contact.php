@@ -1,6 +1,6 @@
 <?php include 'nav.php'; ?>
 <?php include 'database.php';
-// require "/home/gabi/myplugins/api/assets/mail.php";
+require "/home/gabi/myplugins/api/assets/mail.php";
 ?>
 <?php
 if (!empty($_POST)) {
@@ -14,7 +14,7 @@ if (!empty($_POST)) {
     if (empty($errors)) {
       $req = $db->prepare("INSERT INTO contact SET mail = ?, message = ?, object = ?, date = NOW()");
       $req->execute([$mail, $message, $object]);
-      //send_mail($mail, "Confirmation", "Vous avez envoyer un message au site https://agamiweb.ml/");
+      send_mail($mail, "Confirmation", "Vous avez envoyer un message au site https://agamiweb.ml/");
       header("Location: /");
     }
   } else {
@@ -25,8 +25,25 @@ if (!empty($_POST)) {
 <html>
 
 <head>
-  <link rel="stylesheet" href="/css/bootstrap.css">
-  <link rel="stylesheet" href="/css/index.css">
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgamiWeb - Acceuil</title>
+    <link rel="icon" type="image/x-icon" href="/img/logo.png" />
+	<link rel="shortcut icon" type="image/x-icon" href="/img/logo.png" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"></script>
+    <meta name="description" content="AgamiWeb vous présente son site !">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <meta property="og:title" content="AgamiWeb - Acceuil"/>
+    <meta property="og:url" content="https://agamiweb.ml/">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:image" content="/img/logo.png"/>
+    <meta property="og:site_name" content="AgamiWeb"/>
+    <meta property="og:description" content="AgamiWeb vous présente son site !"/>
+    <meta name="theme-color" content="#0046FF"/>
 </head>
 
 <body>
@@ -70,7 +87,6 @@ if (!empty($_POST)) {
       <?php endif; ?>
 
       <div id="message">
-        <p>Vous n'avez pas remplis le fomulaire correctement</p>
         <p id="length_object">Votre objet ne peut pas être vide</p>
         <p id="length_mail">Votre mail ne peut pas être vide</p>
         <p id="valid_mail">Votre mail n'est pas valide</p>
@@ -99,6 +115,7 @@ if (!empty($_POST)) {
         //Mail
         var mail = document.getElementById("mail");
         var length_mail = document.getElementById("length_mail");
+        var valid_mail = document.getElementById("valid_mail");
 
         //Object
         var object = document.getElementById("object");
@@ -108,14 +125,25 @@ if (!empty($_POST)) {
         length_mail.classList.add("invalid");
         length_object.classList.remove("valid");
         length_object.classList.add("invalid");
+        valid_mail.classList.remove("valid");
+        valid_mail.classList.add("invalid");
 
         mail.onkeyup = function() {
           if (mail.value.length > 0) {
+            if (mail.value.match(/^[a-zA-Z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}$/)) {
+              valid_mail.classList.remove("invalid");
+              valid_mail.classList.add("valid");
+            } else {
+              valid_mail.classList.remove("valid");
+              valid_mail.classList.add("invalid");
+            }
             length_mail.classList.remove("invalid");
             length_mail.classList.add("valid");
           } else {
             length_mail.classList.remove("valid");
             length_mail.classList.add("invalid");
+            valid_mail.classList.remove("valid");
+            valid_mail.classList.add("invalid");
           }
         }
 
