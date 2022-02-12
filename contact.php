@@ -14,7 +14,7 @@ if (!empty($_POST)) {
     if (empty($errors)) {
       $req = $db->prepare("INSERT INTO contact SET mail = ?, message = ?, object = ?, date = NOW()");
       $req->execute([$mail, $message, $object]);
-      send_mail($mail, "Confirmation", "Vous avez envoyer un message au site https://agamiweb.ml/");
+      send_mail($mail, "Confirmation", "Vous avez envoyé un message au site https://agamiweb.ml/");
       header("Location: /");
     }
   } else {
