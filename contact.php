@@ -28,7 +28,7 @@ if (!empty($_POST)) {
 <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AgamiWeb - Acceuil</title>
+    <title>AgamiWeb - Accueil</title>
     <link rel="icon" type="image/x-icon" href="/img/logo.png" />
 	<link rel="shortcut icon" type="image/x-icon" href="/img/logo.png" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

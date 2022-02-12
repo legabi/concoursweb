@@ -23,7 +23,7 @@
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
       <ul class="nav navbar-nav">
-        <li><a href="index.php">Acceuil</a></li>
+        <li><a href="index.php">Accueil</a></li>
         <li><a href="contact.php">Nous contacter</a></li>
       </ul>
     </div>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AgamiWeb - Acceuil</title>
+    <title>AgamiWeb - Accueil</title>
     <link rel="icon" type="image/x-icon" href="/img/logo.png" />
 	<link rel="shortcut icon" type="image/x-icon" href="/img/logo.png" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -47,8 +47,8 @@
     <section class="presentation">
         <h1><i class="fa fa-male"></i> Présentation:</h1>
         <p>Nous sommes deux entrepeneurs dans le but de vous aider à créer un site</p>
-        <li style="font-size: 20px; margin-left: 20px;">Malone: développeur HTML PHP JavaScript & Java, 3 ans d'expériance</li>
-        <li style="font-size: 20px; margin-left: 20px;">Gabriel: développeur HTML PHP CSS & Java & Python, 3 ans d'expériance</li>
+        <li style="font-size: 20px; margin-left: 20px;">Malone: développeur HTML PHP JavaScript & Java, 3 ans d'expérience</li>
+        <li style="font-size: 20px; margin-left: 20px;">Gabriel: développeur HTML PHP CSS & Java & Python, 3 ans d'expérience</li>
     </section>
 
     <section class="presentation">
