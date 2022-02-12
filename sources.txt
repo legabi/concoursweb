@@ -1,1 +1,1 @@
-bootswatch theme: https://bootswatch.com/litera/
+bootswatch theme: https://bootswatch.com/3/paper/

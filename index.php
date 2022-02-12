@@ -9,9 +9,10 @@
 	<link rel="shortcut icon" type="image/x-icon" href="/img/logo.png" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"></script>
     <meta name="description" content="AgamiWeb vous présente son site !">
     <link rel="stylesheet" href="/css/bootstrap.css">
-
+    <link rel="stylesheet" href="/css/index.css">
     <meta property="og:title" content="AgamiWeb - Acceuil"/>
     <meta property="og:url" content="https://agamiweb.ml/">
     <meta property="og:locale" content="fr_FR">
@@ -24,5 +25,29 @@
     <?php
         include "nav.php";
     ?>
+
+    <header class="header">
+        <h1>Laissez nous faire votre site</h1>
+    </header>
+    <section class="services">
+		<div class="services-item">
+			<i class="fas fa-desktop delivery-icon"></i>
+			<p class="services-details">Du responsive</p>
+		</div>
+		<div class="services-item">
+			<i class="fa fa-code delivery-icon"></i>
+			<p class="services-details">Livré avec le code source</p>
+		</div>
+		<div class="services-item">
+			<i class="fa fa-box delivery-icon"></i>
+			<p class="services-details">Livraison rapide</p>
+		</div>
+	</section>
+
+    <section class="presentation">
+        <h1>Présentation:</h1>
+        <p>Nous sommes deux entrepeneurs </p>
+    </section>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </body>
 </html>

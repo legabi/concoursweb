@@ -1,0 +1,61 @@
+.header {
+    position: relative;
+    top: -25px;
+    height: 500px;
+    background-image: url(/img/fond1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.header h1 {
+    color: rgb(0, 247, 255);
+    padding: 100px;
+    padding-top: 150px;
+}
+
+.services {
+	display: flex;
+    flex-direction: row;
+	justify-content: space-evenly;
+	margin: 20px;
+}
+
+@media (max-width: 800px) {
+    .services {
+      flex-direction: column;
+    }
+  }
+
+.delivery-icon {
+	font-size: 100px;
+	color: #0046FF;
+}
+
+.delivery-icon:hover {
+  transition-duration: 500ms;
+	font-size: 120px;
+	color: #33FFF3;
+}
+
+.services-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.services-details {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+	width: 100px;
+	text-align: center;
+}
+
+.presentation {
+    margin: 20px;
+}
+
+.presentation p {
+    margin-top: 20px;
+    width: 700px;
+    font-size: 20px;
+}
