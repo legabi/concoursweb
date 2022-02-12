@@ -45,9 +45,26 @@
 	</section>
 
     <section class="presentation">
-        <h1>Présentation:</h1>
-        <p>Nous sommes deux entrepeneurs </p>
+        <h1><i class="fa fa-male"></i> Présentation:</h1>
+        <p>Nous sommes deux entrepeneurs dans le but de vous aider à créer un site</p>
+        <li style="font-size: 20px; margin-left: 20px;">Malone: développeur HTML PHP JavaScript & Java, 3 ans d'expériance</li>
+        <li style="font-size: 20px; margin-left: 20px;">Gabriel: développeur HTML PHP CSS & Java & Python, 3 ans d'expériance</li>
     </section>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <section class="presentation">
+        <h1><i class="fa fa-male"></i> Chiffres:</h1>
+        <li>Clients: 2007</li>
+        <li>Chiffre d'affaire: 200 000€</li>
+        <li>Clients satisfaits dès le début: 1904</li>
+    </section>
+    <footer>
+        <div>
+            Site créé avec ❤️ par le_gabi & Caranouga
+        </div>
+        <div>
+            <a href="/">Acceuil</a><br>
+            <a href="/contact.php">Nous contacter</a>
+        </div>
+    </footer>
 </body>
 </html>

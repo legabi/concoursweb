@@ -29,13 +29,12 @@
 
 .delivery-icon {
 	font-size: 100px;
-	color: #0046FF;
+	color: #2196f3;
 }
 
 .delivery-icon:hover {
   transition-duration: 500ms;
 	font-size: 120px;
-	color: #33FFF3;
 }
 
 .services-item {
@@ -54,8 +53,36 @@
     margin: 20px;
 }
 
+.presentation h1 {
+    font-size: 50px;
+}
+
 .presentation p {
     margin-top: 20px;
-    width: 700px;
     font-size: 20px;
 }
+
+footer {
+    display: flex;
+    flex-direction: row;
+	justify-content: space-evenly;
+    height: auto;
+    background-color: #2196f3;
+}
+
+footer div {
+    margin: 25px auto;
+    text-align: center;
+    width: 300px;
+    color: white;
+}
+
+div a {
+    color: white;
+}
+
+@media (max-width: 800px) {
+    footer {
+      flex-direction: column;
+    }
+  }

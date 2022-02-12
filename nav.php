@@ -1,3 +1,13 @@
+<style>
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 3px;
+  }
+</style>
 <nav class="navbar navbar-inverse" style="position: fixed;left: 0;top: 0%; z-index: 100;width: 100%;">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -14,7 +24,7 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
       <ul class="nav navbar-nav">
         <li><a href="index.php">Acceuil</a></li>
-        <li><a href="contact.php">Nous contacter</a></li> 
+        <li><a href="contact.php">Nous contacter</a></li>
       </ul>
     </div>
   </div>
